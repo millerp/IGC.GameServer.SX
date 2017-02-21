@@ -1,0 +1,17 @@
+#ifndef ITEMS_H
+#define ITEMS_H
+
+
+#define LOAD_ITEMS_CALLBACK 0x00AA1460 // SXE3
+
+#define TOOLTIP_FIX 0x0074A073 // SXE3
+#define TOOLTIP_FIX_XOR_BUFF 0x0043B52F  // SXE3
+#define TOOLTIP_FIX_ADD_LINE 0x00D90A60 // SXE3
+#define TOOLTIP_FIX_BACK_JMP 0x0074A127 // SXE3
+
+#define ITEM_BASE 0x52A // SXE3
+
+
+void ToolTipFix();
+
+#endif

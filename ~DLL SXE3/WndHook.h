@@ -1,0 +1,13 @@
+#ifndef WND_HOOK_H
+#define WND_HOOK_H
+//004D804D   C745 D4 FF6E4D00 MOV DWORD PTR SS:[EBP-2C],main_f.004D6EF>
+
+
+#define MU_WND_PROC_HOOK 0x004DBC61+3 // SXE3
+#define MU_WND_PROC 0x004DAA77 // SXE3
+
+
+extern WNDPROC muWndProc;
+extern HWND MuWindow;
+LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+#endif

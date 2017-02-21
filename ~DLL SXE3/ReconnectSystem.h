@@ -1,0 +1,25 @@
+#ifndef ANTIDC_H
+#define ANTIDC_H
+
+#define MU_FONT_ADDRESS 0x12DDAB8 // SXE3
+#define RENDER_HP_BAR_CALLBACK 0x00763857 // SXE3
+
+extern int g_UserQuit;
+extern int g_ReconnectProcess;
+extern int g_MuBotEnabled;
+extern HANDLE hReconnectThread;
+extern HANDLE hCGLiveThread;
+
+extern BYTE Login[200];
+extern BYTE bCharacter[16];
+extern BYTE bServer[6];
+
+void HookDCFunc();
+bool ConnectToServer(char* ip, WORD port);
+void ReconnectThread();
+void CGLiveThread();
+void RenderLoadingBar();
+void HookExitCharSelectFunc();
+void HookExitFunc();
+extern BYTE *reconnectBuf;
+#endif
