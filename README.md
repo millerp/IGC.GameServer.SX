@@ -1,2 +1,2 @@
 # IGC.GameServer
-### IGCN Season 9.5 (src-x9.5 9.5.1.15) SRC (April/2016)
+### IGC Season 10 Pre-Alpha (src-x10_pre-alpha) SRC (April/2016)
